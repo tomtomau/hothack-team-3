@@ -14,6 +14,9 @@ function App() {
           Fun shit coming soon!!!!
         </p>
         <p>
+          Shannon remembered how to code XD
+        </p>
+        <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <p>
