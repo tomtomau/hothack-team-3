@@ -20,4 +20,4 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           preCommands: /usr/local/bin/npm run build
-          command: pages deploy ./build --branch=production --project-name=crowdclix
+          command: pages deploy ./build --project-name=crowdclix
