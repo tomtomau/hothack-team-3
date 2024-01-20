@@ -1,10 +1,19 @@
-/* div {
-    border: 2px solid red;
-} */
+
+div {
+    /* border: 2px solid red; */
+}
+
+#fans-main {
+    
+    max-width: 80ch;
+}
+
 
 #fans-body {
-    display :grid;
-    grid-template-columns: auto;
+    display :flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
     text-align: center;
     min-height: 100vh;
     background-color: #282c34;
@@ -24,8 +33,11 @@
     min-height: 100px
 }
 
-#fans-main {
-    
-    max-width: 80ch;
-}
+
+#artist-image > img {
+    align-self: center;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+  }
 
