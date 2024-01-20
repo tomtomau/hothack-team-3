@@ -3,14 +3,14 @@ import Footer from './footer.js';
 import Header from './header.js';
 
 
-export default function main() {
-    return (
-      <div>
+// export default function main() {
+//     return (
+//       <div>
 
-            <Header/>
-            <Fan/>
-            <Artist/>
-            <Footer/>
-      </div>
-    );
-  }
+//             <Header/>
+//             <Fan/>
+//             <Artist/>
+//             <Footer/>
+//       </div>
+//     );
+//   }
