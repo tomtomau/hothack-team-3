@@ -1,7 +1,7 @@
 import data from "../artist_components/artist.json"
 import './fans.css';
-import Header from "../artist_components/header.js";
-import Footer from "../artist_components/footer.js";
+import Header from "../other_components/header.js";
+import Footer from "../other_components/footer.js";
 
 //For testing putposes set a temp image here, should pull 
 import logo from "./logo.jpg"
