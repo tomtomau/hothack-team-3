@@ -8,12 +8,17 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Fans from "./fan_components/fans";
+import Report from "./artist_components/report"
 
 
 const router = createBrowserRouter([
   {
     path: "/artist",
     element: <Artist />,
+  },
+  {
+    path: "/artist/report",
+    element: <Report />,
   },
   {
     path: "/fans",
