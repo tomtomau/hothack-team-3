@@ -8,7 +8,7 @@ import Footer from "../other_components/footer.js";
 
 
 
-const baseURL = "https://crowdclix_workers.tom-newby-au.workers.dev/artist";
+const baseURL = "https://crowdclix_workers.tom-newby-au.workers.dev/artists/1";
 
 function Fans() {
 
@@ -34,14 +34,14 @@ function Fans() {
             <div id="fans-main">
                 <div id="artist-info">
                     <div id="artist-image">
-                        <img src={post[0].ArtistLogoURL}  alt={post[0].ArtistName} />
+                        <img src={post.ArtistLogoURL}  alt={post.ArtistName} />
                     </div>
                     <div id="bio">
-                        <p>{post[0].ArtistDescription}</p>
+                        <p>{post.ArtistDescription}</p>
                     </div>
                 </div>
                 <div id="sendMsg">
-                    <p>Send {post[0].ArtistName} a live message!:</p>
+                    <p>Send {post.ArtistName} a live message!:</p>
                     <form> 
                         <input type="text" id="message" name="message"/> 
                         <input type="submit" value="Send"/>
@@ -49,7 +49,7 @@ function Fans() {
                 </div>
 
                 <div id="signup">
-                    <p>Sign up for the {post[0].ArtistName} newsletter!:</p>
+                    <p>Sign up for the {post.ArtistName} newsletter!:</p>
                     <form>
                         <input type="email" placeholder="enter your email address" id="email" name="email"/>
                         <input type="submit" value="Sign me up!"/>

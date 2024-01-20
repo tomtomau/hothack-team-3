@@ -2,7 +2,7 @@ import axios from "axios";
 import React from "react";
 
 
-const baseURL = "https://crowdclix_workers.tom-newby-au.workers.dev/artist";
+const baseURL = "https://crowdclix_workers.tom-newby-au.workers.dev/artists/1";
 
 export default function Header() {
 
@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
       <header>
-            <h1 id="artistName">{post[0].ArtistName}</h1>
+            <h1 id="artistName">{post.ArtistName}</h1>
       </header>
     );
   }
