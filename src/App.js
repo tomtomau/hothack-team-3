@@ -1,11 +1,11 @@
-import logo from './logo.svg';
+import logo from './qr-code.png'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src= {logo} className="App-logo" alt="logo" />
         <p>
           Hello world from Team 3
         </p>
