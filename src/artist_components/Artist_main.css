@@ -16,6 +16,13 @@
   height: auto;
 }
 
+.Avatar{
+  align-items: center;
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+}
+
 .qr_code {
   grid-area: qr;
   padding: 3vh;
@@ -39,7 +46,7 @@
   grid-area: chat;
 }
 
-.report {
+.report_link {
   grid-area: report;
 }
 
@@ -62,6 +69,10 @@
       "report"
       "footer";
   }
+
+  .Avatar{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 897px) {
@@ -69,8 +80,11 @@
     grid-template-areas:
       "header header"
       "qr chat"
-      "report report"
+      "avatar chat"
+      "report chat"
       "footer footer";
+    
+    
   }
 
   .App-logo {
@@ -79,8 +93,15 @@
 
   .chat_box {
     border: solid 2px red;
-    height: 60vh;
-    margin: 3vh;
-    width: 40vw;
+    width:40vw;
   }
+
+  .Avatar {
+    align-items: center;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+  }
+
+
 }
