@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
-      <div>
+      <footer>
             <span>Powered by Crowd Clix </span>
-      </div>
+      </footer>
     );
   }

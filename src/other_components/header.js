@@ -1,12 +1,11 @@
-import data from "./artist.json" 
+import data from "../artist_components/artist.json" 
 console.log(data)
 
 export default function Header() {
     return (
-      <div>
+      <header>
             <h1 id="artistName">{data.artist.name}</h1>
-
-      </div>
+      </header>
     );
   }
 
