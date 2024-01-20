@@ -1,4 +1,4 @@
-name: Deploy
+name: Build and Deploy
 
 on:
   push:
@@ -9,10 +9,15 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: Deploy
+    name: Build and Deploy
     steps:
-      - uses: actions/checkout@v3
-      - name: Deploy
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Build and Deploy
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          preCommands: /usr/local/bin/npm run build
+          command: pages deploy ./build --project-name=crowdclix
