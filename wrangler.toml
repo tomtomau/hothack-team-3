@@ -1,0 +1,6 @@
+# Top-level configuration
+# Default config from https://developers.cloudflare.com/workers/wrangler/configuration/
+# Stripped down to minimum
+name = "crowdclix-frontend"
+main = "./src/index.js"
+compatibility_date = "2024-01-20"
