@@ -1,0 +1,8 @@
+{
+    "artitst": 
+        {
+            "name": "artist_name", 
+            "description": "description_of_artist",
+            "logo": "logo_url"
+        }
+}
