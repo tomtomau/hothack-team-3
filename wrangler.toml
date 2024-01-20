@@ -4,6 +4,4 @@
 name = "crowdclix-frontend"
 main = "./src/index.js"
 compatibility_date = "2024-01-20"
-# As much as I don't like it, apparently this is ok?
-# https://github.com/cloudflare/wrangler-legacy/issues/209#issuecomment-541654484
 account_id = "2dccbe1896bc719c10e6502be7070494"
