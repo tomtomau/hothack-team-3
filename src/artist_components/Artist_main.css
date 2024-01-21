@@ -50,6 +50,10 @@
   grid-area: report;
 }
 
+.page_views{
+  grid-area: views;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -66,6 +70,7 @@
       "header"
       "qr"
       "chat"
+      "views"
       "report"
       "footer";
   }
@@ -81,6 +86,7 @@
       "header header"
       "qr chat"
       "avatar chat"
+      "views chat"
       "report chat"
       "footer footer";
     

@@ -5,6 +5,8 @@ import Header from '../other_components/header'
 import Footer from '../other_components/footer'
 import axios from "axios";
 import React from "react";
+import Loading from "../other_components/loading"
+import PageVeiws from "./page_views"
 
 const baseURL = "https://crowdclix_workers.tom-newby-au.workers.dev/artists/1";
 
@@ -25,7 +27,7 @@ function App() {
 
 
   if (!post) return (
-    <div><p>LOADING ...</p></div>
+    <div><Loading/></div>
   )
   return (
     <div className='App'>
@@ -44,9 +46,13 @@ function App() {
       <div>
         <a href="/artist/report" className="report_link"><button>Report</button></a>
       </div>
+      <div className="page_views">
+        <PageVeiws />
+      </div>
       <div className='footer'>
         <Footer />
       </div>
+
     </div>
 
   )
