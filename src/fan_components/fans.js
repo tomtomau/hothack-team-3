@@ -5,10 +5,13 @@ import React from "react";
 import './fans.css';
 import Header from "../other_components/header.js";
 import Footer from "../other_components/footer.js";
-
+import Signup from "./signup.js";
 
 
 const baseURL = "https://crowdclix_workers.tom-newby-au.workers.dev/artists/1";
+
+
+
 
 function Fans() {
 
@@ -48,13 +51,7 @@ function Fans() {
                     </form>
                 </div>
 
-                <div id="signup">
-                    <p>Sign up for the {post.ArtistName} newsletter!:</p>
-                    <form>
-                        <input type="email" placeholder="enter your email address" id="email" name="email"/>
-                        <input type="submit" value="Sign me up!"/>
-                    </form>
-                </div>
+            <Signup/>
             </div>
         <Footer/>
         </div>
