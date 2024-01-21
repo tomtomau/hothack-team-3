@@ -33,6 +33,7 @@ function PageViews() {
 
     return (
             <div className='page_views'>
+                <h2>Page Views</h2>
                 <h2>{post.ArtistPageviews}</h2>
             </div>
     );
