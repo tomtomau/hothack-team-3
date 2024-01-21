@@ -14,51 +14,27 @@ export default function SignUp() {
     
        
     // Create the post request with Axios
-    const baseURL = "https://crowdclix_workers.tom-newby-au.workers.dev/signups"
-    const [post, setPost] = React.useState(null);
-
-    React.useEffect(() => {
-        axios.get(`${baseURL}/1`).then((response) => {
-        setPost(response.data);
-        });
-    }, []);
+    const signupURL = "https://crowdclix_workers.tom-newby-au.workers.dev/signups/"
+    const artistID ="1"
+    // const [post, setPost] = React.useState(null);
 
     // handle email submission
     async function handleSubmit(e) {
     e.preventDefault();
 
-        axios
-        .post(baseURL, {email: email})
+    // Create the post request with Axios - need to get artist id from fans.js
+    axios
+        .post(`${signupURL + artistID}`, {email: email})
         .then((response) => {
-            setPost(response.data);
+            console.log(response.data);
         });
+    
+    setSubmitted(true)
     }
 
-    if (submitted === 'success') {
+    if (submitted === true) {
         return <p>Thanks for signing up!</p>
         }
-    // try{
-    //     const response = await fetch("https://crowdclix_workers.tom-newby-au.workers.dev/signups", {
-    //         method: "POST",
-    //         headers: {
-    //         "Content-Type": "application/json",
-    //         },
-    //         body: JSON.stringify({ "email": email }),
-    //     });
-
-    //   if (response.ok) {
-    //     setSubmitted(true);
-    //     // You can perform additional actions after a successful submission
-    //   } else {
-    //     // Handle non-successful response, e.g., display an error message
-    //     console.error("Failed to submit email");
-    //   }
-    // } catch (error) {
-    //   // Handle network errors or other issues
-    //   console.error("Error:", error.message);
-    // }
-
-    
     
     return (
         <div id="signup">
