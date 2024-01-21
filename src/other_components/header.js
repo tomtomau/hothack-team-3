@@ -1,24 +1,9 @@
-import axios from "axios";
 import React from "react";
 
 
-const baseURL = "https://crowdclix_workers.tom-newby-au.workers.dev/artists/1";
 
-export default function Header() {
+export default function Header(post) {
 
-  const [post, setPost] = React.useState(null);
-  const [error, setError] = React.useState(null);
-
-  React.useEffect(() => {
-      axios.get(baseURL).then((response) => {
-      setPost(response.data);
-      }).catch(error => {
-          setError(error);
-      });
-  }, []);
-  
-  if (error) return `Error: ${error.message}`;
-  if (!post) return null;
 
   return (
       <header>

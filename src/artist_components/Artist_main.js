@@ -30,7 +30,7 @@ function App() {
   return (
     <div className='App'>
       <div className='header'>
-        <Header />
+        <Header ArtistName = {post.ArtistName}/>
       </div>
       <div>
         <img src={post.ArtistLogoURL} className="Avatar" alt={post.ArtistName} />
