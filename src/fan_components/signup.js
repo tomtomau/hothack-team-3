@@ -2,7 +2,7 @@ import { useState } from 'react';
 import axios from "axios";
 import React from "react";
 
-export default function SignUp() {
+export default function SignUp(artist) {
     // hold the value for the email address
     const [email, setEmail] = useState('');
     const [submitted, setSubmitted] = useState(false);
@@ -15,7 +15,7 @@ export default function SignUp() {
        
     // Create the post request with Axios
     const signupURL = "https://crowdclix_workers.tom-newby-au.workers.dev/signup/"
-    const artistID ="1"
+    const artistID = artist.Artist.ArtistID
     // const [post, setPost] = React.useState(null);
 
     // handle email submission

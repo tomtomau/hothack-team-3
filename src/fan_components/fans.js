@@ -17,7 +17,7 @@ function Fans() {
 
     const [post, setPost] = React.useState(null);
     const [error, setError] = React.useState(null);
-
+    
     React.useEffect(() => {
         axios.get(baseURL).then((response) => {
         setPost(response.data);
@@ -44,7 +44,7 @@ function Fans() {
                     </div>
                 </div>
             <PostMsg Artist = {post}/>
-            <Signup/>
+            <Signup Artist = {post}/>
             </div>
         <Footer/>
         </div>
