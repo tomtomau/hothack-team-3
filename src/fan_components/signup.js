@@ -14,7 +14,7 @@ export default function SignUp() {
     
        
     // Create the post request with Axios
-    const signupURL = "https://crowdclix_workers.tom-newby-au.workers.dev/signups/"
+    const signupURL = "https://crowdclix_workers.tom-newby-au.workers.dev/signup/"
     const artistID ="1"
     // const [post, setPost] = React.useState(null);
 
