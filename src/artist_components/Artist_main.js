@@ -34,17 +34,18 @@ function App() {
       <div className='header'>
         <Header ArtistName = {post.ArtistName}/>
       </div>
-      <div>
+      {/* <div>
         <img src={post.ArtistLogoURL} className="Avatar" alt={post.ArtistName} />
-      </div>
+      </div> */}
       <div className="qr_code">
         <img src={logo} className="App-logo" alt="logo" />
+        <h2>SCAN ME</h2>
       </div>
       <div className="chat_box">
         <ChatBox />
       </div>
-      <div>
-        <a href="/artist/report" className="report_link"><button>Report</button></a>
+      <div className="report_link">
+        <a href="/artist/report">Report</a>
       </div>
       <div className="page_views">
         <PageVeiws />

@@ -1,13 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .report_page{
     text-align: center;
     background-color: #282c34;
-    min-height: 100vh;
     font-size: calc(10px + 2vmin);
     color: white;
     align-content: center;
     justify-content: center;
 }
 
-.page_views{
-    color: 'blue';
-}
+.artist_page a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: rgb(128, 128, 128, 0.2);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+.email_report {
+        border: solid 2px black;
+        background-color: rgba(128, 128, 128, 0.2);
+        padding: 3vw;
+        margin: 3vh;
+        border-radius: 15px;
+        overflow-y:scroll;
+        height: 80vh;
+      }
+      
+.email_report li {
+        list-style-type: none;
+      }
+      

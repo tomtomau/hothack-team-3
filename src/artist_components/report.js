@@ -1,22 +1,33 @@
 import './report.css'
-import Header from '../other_components/header'
-import React from "react";
-
-
+import EmailList from './email_list'
+import React from "react"
 
 
 
 function Report() {
     return (
         <div className='report_page'>
-            <Header />
-            <h1>Report</h1>
-            <a href="/artist" className="report_link"><button>Page</button></a>
+            <div className ='report_header'>
+                <h1>Report Page</h1>
+            </div>
+
+            <div className='email_report'>
+                <EmailList />
+            </div>
+
+            <div className ='artist_page'>
+            <a href="/artist">Home Page</a>
+            </div>
+            
         </div>
     )
 }
 
 export default Report
+
+
+
+
 
 
 
