@@ -7,6 +7,7 @@ import Header from "../other_components/header.js";
 import Footer from "../other_components/footer.js";
 import Signup from "./signup.js";
 import PostMsg from "./postmsg.js";
+import PostCounter from "./PostCounter.js";
 
 const baseURL = "https://crowdclix_workers.tom-newby-au.workers.dev/artists/1";
 
@@ -47,7 +48,9 @@ function Fans() {
             <Signup Artist = {post}/>
             </div>
         <Footer/>
+        <PostCounter Artist = {post}/>
         </div>
+
     )
 }
 
