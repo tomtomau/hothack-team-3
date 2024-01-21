@@ -1,0 +1,19 @@
+#email{
+    font-size: 24px;
+    width:400px;
+    max-width: 100%;
+}
+
+#submit{
+    font-size: 24px;
+    width:400px;
+    max-width: 100%;
+}
+
+#signup{
+    border: solid 2px black;
+    background-color: rgba(128, 128, 128, 0.2);
+    padding: 3vw;
+    margin: 3vh;
+    border-radius: 15px; 
+}

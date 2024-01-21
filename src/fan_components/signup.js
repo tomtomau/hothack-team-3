@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './signup.css'
 import axios from "axios";
 import React from "react";
 
@@ -38,10 +39,10 @@ export default function SignUp(artist) {
     
     return (
         <div id="signup">
-        <p>Sign up for the newsletter!:</p>
+        <p>Sign up for the newsletter!</p>
         <form onSubmit={handleSubmit}>
             <input type="email" placeholder="enter your email address" id="email" name="email" value= { email } onChange={handleEmailChange}/>
-            <button type="submit" disabled={email.length === 0}> Sign me up!</button>
+            <div><button id="submit" type="submit" disabled={email.length === 0}> Sign me up!</button></div>
         </form>
         </div>
 

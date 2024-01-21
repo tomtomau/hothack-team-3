@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import axios from "axios";
 import React from "react";
+import './postmsg.css'
 
 export default function PostMsg(artist) {
     // hold the value for the email address
@@ -38,11 +39,11 @@ export default function PostMsg(artist) {
         }
     
     return (
-        <div id="sendMsg">
-        <p>Send {artist.Artist.ArtistName} a live message!:</p>
+    <div id="sendMsg">
+        <p>Send {artist.Artist.ArtistName} a live message!</p>
         <form onSubmit={handleMsgSubmit}> 
-            <input type="text" id="message" name="message" value = { msg } onChange={handleMsgChange}/> 
-            <input type="submit" value="Send"/>
+            <input type="text" placeholder="enter a message"id="message" name="message" value = { msg } onChange={handleMsgChange}/> 
+            <div><input type="submit" id="send" value="Send"/></div>
         </form>
     </div>
     );

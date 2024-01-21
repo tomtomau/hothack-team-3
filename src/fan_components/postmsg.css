@@ -1,0 +1,28 @@
+#message{
+    font-size: 24px;
+    width:400px;
+    max-width: 100%;
+}
+
+#send{
+    font-size: 24px;
+    width:400px;
+    max-width: 100%;
+
+}
+
+.message_box {
+    display: flex;
+    flex-direction: column;
+}
+
+#sendMsg{
+    border: solid 2px black;
+    background-color: rgba(128, 128, 128, 0.2);
+    padding: 3vw;
+    margin: 3vh;
+    border-radius: 15px; 
+    
+}
+
+

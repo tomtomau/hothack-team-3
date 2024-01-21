@@ -1,8 +1,4 @@
 
-div {
-    /* border: 2px solid red; */
-}
-
 #fans-main {
     
     max-width: 80ch;
@@ -21,6 +17,8 @@ div {
     font-size:  max(0.5vw - 1em, 2rem); 
     /* calc(10px + 2vmin); */
     color: white;
+    
+    
 }
 
 
@@ -42,3 +40,14 @@ div {
     height: auto;
   }
 
+.signup_input{
+    font-size: 26px;
+}
+
+#artist-info{
+    border: solid 2px black;
+    background-color: rgba(128, 128, 128, 0.2);
+    padding: 3vw;
+    margin: 3vh;
+    border-radius: 15px; 
+}
